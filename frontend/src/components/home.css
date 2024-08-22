@@ -1,0 +1,64 @@
+.fullscreen-bg {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.fullscreen-bg__video {
+    filter: brightness(0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    .fullscreen-bg__content {
+        font-size: 170%;
+        /* Font size for phones */
+    }
+    .fade-in-heading {
+        font-size: 70%;
+    }
+}
+
+
+/* Media query for devices with a width more than 768px (common breakpoint for desktops) */
+
+@media (min-width: 769px) {
+    .fullscreen-bg__content {
+        font-size: 400%;
+        /* Font size for desktops */
+    }
+    .fade-in-heading {
+        font-size: 50%;
+    }
+}
+
+.fullscreen-bg__content {
+    font-family: sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* Adjust text color as needed */
+}
+
+.fade-in-heading {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}

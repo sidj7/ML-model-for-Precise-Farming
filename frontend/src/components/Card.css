@@ -1,0 +1,12 @@
+/* Card.css */
+.card-custom {
+    width: 25rem; /* Default to larger screens */
+    
+  }
+  
+  @media (max-width: 768px) { /* Adjusts for screens smaller than 768px */
+    .card-custom {
+      width: 15rem; /* Width for mobile devices */
+    }
+  }
+  
